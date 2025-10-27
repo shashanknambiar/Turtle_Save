@@ -3,6 +3,8 @@ logs/
 build/
 bin/
 lib/
+src/my_cpp_pkg
+src/my_robot_interfaces
 msg_gen/
 srv_gen/
 msg/*Action.msg
