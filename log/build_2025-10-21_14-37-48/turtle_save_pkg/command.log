@@ -1,4 +1,0 @@
-Invoking command in '/home/ros/ros2_ws/build/turtle_save_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ros/ros2_ws/build/turtle_save_pkg -- -j22 -l22
-Invoked command in '/home/ros/ros2_ws/build/turtle_save_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ros/ros2_ws/build/turtle_save_pkg -- -j22 -l22
-Invoking command in '/home/ros/ros2_ws/build/turtle_save_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ros/ros2_ws/build/turtle_save_pkg
-Invoked command in '/home/ros/ros2_ws/build/turtle_save_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ros/ros2_ws/build/turtle_save_pkg

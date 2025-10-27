@@ -1,2 +1,0 @@
-gmake[2]: Warning: File '/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp' has modification time 4.7 s in the future
-gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
