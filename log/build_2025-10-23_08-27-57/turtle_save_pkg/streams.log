@@ -1,0 +1,44 @@
+[0.104s] Invoking command in '/home/ros/ros2_ws/build/turtle_save_pkg': CMAKE_PREFIX_PATH=/home/ros/ros2_ws/install/custom_interfaces:/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ros/ros2_ws/install/custom_interfaces/lib:/home/ros/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/ros/ros2_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/ros/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/ros/ros2_ws/build/turtle_save_pkg -- -j22 -l22
+[0.147s] [ 50%] Built target turtlecontrol_node
+[0.148s] [ 75%] [32mBuilding CXX object CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o[0m
+[1.995s] [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleSpawnNode::[01;32m[KTurtleKillComplete[m[K(rclcpp::Client<turtlesim::srv::Kill>::SharedFuture)[m[K’:
+[1.995s] [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:116:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfuture[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.995s]   116 |     void TurtleKillComplete([01;35m[Krclcpp::Client<turtlesim::srv::Kill>::SharedFuture future[m[K)
+[1.995s]       |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.999s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.999s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[1.999s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[1.999s]                  from [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:1[m[K:
+[1.999s] [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleSpawnNode::[01;32m[KHandleRemoveTurtle[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.999s] [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:153:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.999s]   153 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Removing %s from turtles"[m[K, turtle);
+[1.999s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.999s] [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:153:52:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.999s]   153 |         RCLCPP_INFO(this->get_logger(), "Removing [01;36m[K%s[m[K from turtles", turtle);
+[1.999s]       |                                                   [01;36m[K~^[m[K
+[1.999s]       |                                                    [01;36m[K|[m[K
+[1.999s]       |                                                    [01;36m[Kchar*[m[K
+[5.143s] [100%] [32m[1mLinking CXX executable turtlespawn_node[0m
+[5.374s] [100%] Built target turtlespawn_node
+[5.382s] Invoked command in '/home/ros/ros2_ws/build/turtle_save_pkg' returned '0': CMAKE_PREFIX_PATH=/home/ros/ros2_ws/install/custom_interfaces:/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ros/ros2_ws/install/custom_interfaces/lib:/home/ros/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/ros/ros2_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/ros/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/ros/ros2_ws/build/turtle_save_pkg -- -j22 -l22
+[5.389s] Invoking command in '/home/ros/ros2_ws/build/turtle_save_pkg': CMAKE_PREFIX_PATH=/home/ros/ros2_ws/install/custom_interfaces:/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ros/ros2_ws/install/custom_interfaces/lib:/home/ros/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/ros/ros2_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/ros/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/ros/ros2_ws/build/turtle_save_pkg
+[5.394s] -- Install configuration: ""
+[5.394s] -- Installing: /home/ros/ros2_ws/install/turtle_save_pkg/lib/turtle_save_pkg/turtlespawn_node
+[5.397s] -- Set non-toolchain portion of runtime path of "/home/ros/ros2_ws/install/turtle_save_pkg/lib/turtle_save_pkg/turtlespawn_node" to ""
+[5.397s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/lib/turtle_save_pkg/turtlecontrol_node
+[5.397s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/ament_index/resource_index/package_run_dependencies/turtle_save_pkg
+[5.397s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/ament_index/resource_index/parent_prefix_path/turtle_save_pkg
+[5.397s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/ament_prefix_path.sh
+[5.397s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/ament_prefix_path.dsv
+[5.397s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/path.sh
+[5.397s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/path.dsv
+[5.398s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.bash
+[5.398s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.sh
+[5.398s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.zsh
+[5.398s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.dsv
+[5.398s] -- Installing: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/package.dsv
+[5.398s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/ament_index/resource_index/packages/turtle_save_pkg
+[5.399s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/cmake/turtle_save_pkgConfig.cmake
+[5.399s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/cmake/turtle_save_pkgConfig-version.cmake
+[5.399s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/package.xml
+[5.400s] Invoked command in '/home/ros/ros2_ws/build/turtle_save_pkg' returned '0': CMAKE_PREFIX_PATH=/home/ros/ros2_ws/install/custom_interfaces:/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ros/ros2_ws/install/custom_interfaces/lib:/home/ros/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/ros/ros2_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/ros/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/ros/ros2_ws/build/turtle_save_pkg

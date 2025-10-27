@@ -1,0 +1,118 @@
+[0.000000] (-) TimerEvent: {}
+[0.000299] (-) JobUnselected: {'identifier': 'custom_interfaces'}
+[0.001030] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.001051] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.001061] (turtle_save_pkg) JobQueued: {'identifier': 'turtle_save_pkg', 'dependencies': OrderedDict({'custom_interfaces': '/home/ros/ros2_ws/install/custom_interfaces'})}
+[0.001079] (turtle_save_pkg) JobStarted: {'identifier': 'turtle_save_pkg'}
+[0.092659] (turtle_save_pkg) JobProgress: {'identifier': 'turtle_save_pkg', 'progress': 'cmake'}
+[0.093244] (turtle_save_pkg) JobProgress: {'identifier': 'turtle_save_pkg', 'progress': 'build'}
+[0.093874] (turtle_save_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/ros2_ws/build/turtle_save_pkg', '--', '-j22', '-l22'], 'cwd': '/home/ros/ros2_ws/build/turtle_save_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ros/ros2_ws/install/custom_interfaces/lib:/home/ros/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ros', 'OLDPWD': '/home/ros', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ros/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ros', 'NAME': 'Zphi', 'WSL_INTEROP': '/run/WSL/394_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.2.13-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/shash/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/shash/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.10.7-hotspot/bin:/mnt/c/Users/shash/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shash/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shash/AppData/Roaming/npm:/mnt/c/Users/shash/.dotnet/tools:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ros/ros2_ws/install/custom_interfaces:/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ros/ros2_ws/build/turtle_save_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros/ros2_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/ros/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ros/ros2_ws/install/custom_interfaces:/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.100318] (-) TimerEvent: {}
+[0.116509] (turtle_save_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.208867] (-) TimerEvent: {}
+[0.277790] (turtle_save_pkg) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.312077] (-) TimerEvent: {}
+[0.376590] (turtle_save_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.382091] (turtle_save_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.389397] (turtle_save_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.397837] (turtle_save_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.413671] (-) TimerEvent: {}
+[0.439511] (turtle_save_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.440332] (turtle_save_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.521148] (-) TimerEvent: {}
+[0.605007] (turtle_save_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.622863] (-) TimerEvent: {}
+[0.731271] (turtle_save_pkg) StdoutLine: {'line': b'-- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)\n'}
+[0.731524] (-) TimerEvent: {}
+[0.765444] (turtle_save_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)\n'}
+[0.778977] (turtle_save_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.798929] (turtle_save_pkg) StdoutLine: {'line': b'-- Found custom_interfaces: 0.0.0 (/home/ros/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake)\n'}
+[0.834957] (-) TimerEvent: {}
+[0.885398] (turtle_save_pkg) StdoutLine: {'line': b'-- Configuring done (0.8s)\n'}
+[0.908037] (turtle_save_pkg) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.913526] (turtle_save_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/ros2_ws/build/turtle_save_pkg\n'}
+[0.935314] (-) TimerEvent: {}
+[0.947369] (turtle_save_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o\x1b[0m\n'}
+[0.952322] (turtle_save_pkg) StdoutLine: {'line': b'[ 75%] Built target turtlecontrol_node\n'}
+[1.037330] (-) TimerEvent: {}
+[1.147669] (-) TimerEvent: {}
+[1.258025] (-) TimerEvent: {}
+[1.368374] (-) TimerEvent: {}
+[1.478781] (-) TimerEvent: {}
+[1.589154] (-) TimerEvent: {}
+[1.699515] (-) TimerEvent: {}
+[1.809858] (-) TimerEvent: {}
+[1.920284] (-) TimerEvent: {}
+[2.030458] (-) TimerEvent: {}
+[2.141112] (-) TimerEvent: {}
+[2.251665] (-) TimerEvent: {}
+[2.362276] (-) TimerEvent: {}
+[2.472880] (-) TimerEvent: {}
+[2.583268] (-) TimerEvent: {}
+[2.693879] (-) TimerEvent: {}
+[2.804435] (-) TimerEvent: {}
+[2.914884] (-) TimerEvent: {}
+[3.025599] (-) TimerEvent: {}
+[3.058092] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTurtleSpawnNode::\x1b[01;32m\x1b[KTurtleSpawnNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.058368] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:33:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[3.058421] (turtle_save_pkg) StderrLine: {'line': b'   33 |        removeTurtleService = this->\x1b[01;31m\x1b[Kcreate_service<\x1b[m\x1b[K\n'}
+[3.058457] (turtle_save_pkg) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.059193] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:33:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Service<example_interfaces::srv::Trigger>::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Service<example_interfaces::srv::Trigger> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.060082] (turtle_save_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/memory:80\x1b[m\x1b[K,\n'}
+[3.060225] (turtle_save_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K,\n'}
+[3.060261] (turtle_save_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:1\x1b[m\x1b[K:\n'}
+[3.060322] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:418:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(const std::shared_ptr<_Yp>&) \x1b[35m\x1b[K[with _Tp = rclcpp::Service<example_interfaces::srv::Trigger>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.060362] (turtle_save_pkg) StderrLine: {'line': b'  418 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[3.060396] (turtle_save_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.060665] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:418:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.061210] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:33:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.061279] (turtle_save_pkg) StderrLine: {'line': b'   33 |        removeTurtleService = this->\x1b[01;36m\x1b[Kcreate_service<\x1b[m\x1b[K\n'}
+[3.061321] (turtle_save_pkg) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.061353] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:429:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(std::auto_ptr<_Up>&&) \x1b[35m\x1b[K[with _Tp = rclcpp::Service<example_interfaces::srv::Trigger>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.061387] (turtle_save_pkg) StderrLine: {'line': b'  429 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[3.061653] (turtle_save_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.061801] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:429:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.061900] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:33:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.062067] (turtle_save_pkg) StderrLine: {'line': b'   33 |        removeTurtleService = this->\x1b[01;36m\x1b[Kcreate_service<\x1b[m\x1b[K\n'}
+[3.062105] (turtle_save_pkg) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.062138] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:446:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(std::shared_ptr<_Yp>&&) \x1b[35m\x1b[K[with _Tp = rclcpp::Service<example_interfaces::srv::Trigger>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.062178] (turtle_save_pkg) StderrLine: {'line': b'  446 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[3.062209] (turtle_save_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.062238] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:446:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.062268] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:33:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.062299] (turtle_save_pkg) StderrLine: {'line': b'   33 |        removeTurtleService = this->\x1b[01;36m\x1b[Kcreate_service<\x1b[m\x1b[K\n'}
+[3.062328] (turtle_save_pkg) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.062358] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:454:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(std::unique_ptr<_Up, _Ep>&&) \x1b[35m\x1b[K[with _Del = _Yp; _Tp = rclcpp::Service<example_interfaces::srv::Trigger>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.062393] (turtle_save_pkg) StderrLine: {'line': b'  454 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[3.062422] (turtle_save_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.062451] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:454:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.062482] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:33:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.062512] (turtle_save_pkg) StderrLine: {'line': b'   33 |        removeTurtleService = this->\x1b[01;36m\x1b[Kcreate_service<\x1b[m\x1b[K\n'}
+[3.062541] (turtle_save_pkg) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.062570] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:414:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(const std::shared_ptr<_Tp>&) \x1b[35m\x1b[K[with _Tp = rclcpp::Service<example_interfaces::srv::Trigger>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.062600] (turtle_save_pkg) StderrLine: {'line': b'  414 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[3.062630] (turtle_save_pkg) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.062661] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:414:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<rclcpp::Service<example_interfaces::srv::Trigger> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.062692] (turtle_save_pkg) StderrLine: {'line': b'  414 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[3.062724] (turtle_save_pkg) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.062753] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:438:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(std::shared_ptr<_Tp>&&) \x1b[35m\x1b[K[with _Tp = rclcpp::Service<example_interfaces::srv::Trigger>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.062822] (turtle_save_pkg) StderrLine: {'line': b'  438 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[3.062854] (turtle_save_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.062885] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:438:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Service<example_interfaces::srv::Trigger> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.062916] (turtle_save_pkg) StderrLine: {'line': b'  438 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[3.062947] (turtle_save_pkg) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.132028] (-) TimerEvent: {}
+[3.242425] (-) TimerEvent: {}
+[3.347829] (-) TimerEvent: {}
+[3.458187] (-) TimerEvent: {}
+[3.568583] (-) TimerEvent: {}
+[3.669852] (-) TimerEvent: {}
+[3.780346] (-) TimerEvent: {}
+[3.890765] (-) TimerEvent: {}
+[4.001177] (-) TimerEvent: {}
+[4.004331] (turtle_save_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/turtlespawn_node.dir/build.make:76: CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o] Error 1\n'}
+[4.004609] (turtle_save_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtlespawn_node.dir/all] Error 2\n'}
+[4.004741] (turtle_save_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.007642] (turtle_save_pkg) CommandEnded: {'returncode': 2}
+[4.026421] (turtle_save_pkg) JobEnded: {'identifier': 'turtle_save_pkg', 'rc': 2}
+[4.037344] (-) EventReactorShutdown: {}

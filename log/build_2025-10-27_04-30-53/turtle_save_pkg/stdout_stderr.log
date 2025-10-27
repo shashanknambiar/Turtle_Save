@@ -1,0 +1,22 @@
+[ 50%] Built target turtlespawn_node
+[ 75%] [32mBuilding CXX object CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o[0m
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:111:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+  111 |     [01;31m[Krclcpp[m[K:Subscription<std_msgs::msg::String>::SharedPtr removeTurtleAck;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:[m[K In constructor ‘[01m[KTurtleControl::[01;32m[KTurtleControl[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[KremoveTurtleAck[m[K’ was not declared in this scope; did you mean ‘[01m[KremoveTurtle[m[K’?
+   20 |         [01;31m[KremoveTurtleAck[m[K = this->create_subscription<std_msgs::msg::String>("/TurtleRemoveComplete", 10,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KremoveTurtle[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleControl::[01;32m[KTurtleSaveAck[m[K(std_msgs::msg::String)[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:85:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KturtleName[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   85 |     void TurtleSaveAck([01;35m[Kstd_msgs::msg::String turtleName[m[K)
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleControl::[01;32m[KSetTurtleToWait[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:97:9:[m[K [01;31m[Kerror: [m[K‘[01m[KApplyVelocities[m[K’ was not declared in this scope; did you mean ‘[01m[KApplyTurtleVelocities[m[K’?
+   97 |         [01;31m[KApplyVelocities[m[K(0,0);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KApplyTurtleVelocities[m[K
+gmake[2]: *** [CMakeFiles/turtlecontrol_node.dir/build.make:76: CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/turtlecontrol_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

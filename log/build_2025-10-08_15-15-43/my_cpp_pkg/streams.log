@@ -1,0 +1,22 @@
+[0.013s] Invoking command in '/home/ros/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ros/ros2_ws/build/my_cpp_pkg -- -j22 -l22
+[0.114s] [ 50%] Built target number_publisher_node
+[0.114s] [ 66%] Built target cpp_node
+[0.117s] [ 83%] [32mBuilding CXX object CMakeFiles/number_counter_node.dir/src/numbercounter.cpp.o[0m
+[1.908s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:[m[K In constructor ‘[01m[KNumberCounterNode::[01;32m[KNumberCounterNode[m[K()[m[K’:
+[1.908s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:13:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass NumberCounterNode[m[K’ has no member named ‘[01m[Kcreaete_subscription[m[K’; did you mean ‘[01m[Kcreate_subscription[m[K’?
+[1.909s]    13 |         subscriber_ = this->[01;31m[Kcreaete_subscription[m[K<example_interfaces::msg::Int64>("number", 10, std::bind(&NumberCounterNode::EventRecievedCallBack, this, _1));
+[1.909s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.909s]       |                             [32m[Kcreate_subscription[m[K
+[1.909s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:13:80:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.909s]    13 |         subscriber_ = this->creaete_subscription<example_interfaces::msg::Int64[01;31m[K>[m[K("number", 10, std::bind(&NumberCounterNode::EventRecievedCallBack, this, _1));
+[1.909s]       |                                                                                [01;31m[K^[m[K
+[1.909s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:13:82:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[1.909s]    13 |         subscriber_ = this->creaete_subscription<example_interfaces::msg::Int64>([01;35m[K"number"[m[K, 10, std::bind(&NumberCounterNode::EventRecievedCallBack, this, _1));
+[1.909s]       |                                                                                  [01;35m[K^~~~~~~~[m[K
+[1.913s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:13:157:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[1.913s]    13 |         subscriber_ = this->creaete_subscription<example_interfaces::msg::Int64>("number", 10, std::bind(&NumberCounterNode::EventRecievedCallBack, this, _1[01;35m[K)[m[K);
+[1.913s]       |                                                                                                                                                             [01;35m[K^[m[K
+[2.664s] gmake[2]: *** [CMakeFiles/number_counter_node.dir/build.make:76: CMakeFiles/number_counter_node.dir/src/numbercounter.cpp.o] Error 1
+[2.665s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/number_counter_node.dir/all] Error 2
+[2.665s] gmake: *** [Makefile:146: all] Error 2
+[2.666s] Invoked command in '/home/ros/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ros/ros2_ws/build/my_cpp_pkg -- -j22 -l22

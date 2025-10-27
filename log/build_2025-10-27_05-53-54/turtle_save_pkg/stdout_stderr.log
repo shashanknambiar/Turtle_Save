@@ -1,0 +1,63 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o[0m
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:[m[K In constructor ‘[01m[KTurtleControl::[01;32m[KTurtleControl[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:15:49:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K:[m[K’ token
+   15 |         _timer = create_wall_timer(std::chrono::[01;31m[K:[m[Kmilliseconds(10), std::bind(&TurtleControl::timerCallBack, this));
+      |                                                 [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:1[m[K:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleControl::[01;32m[KNextTargetRecieved[m[K(rclcpp::Client<custom_interfaces::srv::TargetTurtleInfo>::SharedFuture)[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:151:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 8 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  151 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Target at x: %f y: %f theta: %f name: %s"[m[K, CurrentTurtlePos.x, CurrentTurtlePos.y, CurrentTurtlePos.theta, TargetTurtleName);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:151:81:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  151 |         RCLCPP_INFO(this->get_logger(), "Target at x: %f y: %f theta: %f name: [01;36m[K%s[m[K", CurrentTurtlePos.x, CurrentTurtlePos.y, CurrentTurtlePos.theta, TargetTurtleName);
+      |                                                                                [01;36m[K~^[m[K
+      |                                                                                 [01;36m[K|[m[K
+      |                                                                                 [01;36m[Kchar*[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:1[m[K:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleSpawnNode::[01;32m[KspawnCompleteCallBack[m[K(rclcpp::Client<turtlesim::srv::Spawn>::SharedFuture)[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:90:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   90 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"Spawned at x: %f y: %f theta: %f name: %s"[m[K, [32m[Kx[m[K, y, theta, turtle);
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~[m[K
+      |                                                                                          [32m[K|[m[K
+      |                                                                                          [32m[Kint[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:90:61:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   90 |             RCLCPP_INFO(this->get_logger(), "Spawned at x: [01;36m[K%f[m[K y: %f theta: %f name: %s", x, y, theta, turtle);
+      |                                                            [01;36m[K~^[m[K
+      |                                                             [01;36m[K|[m[K
+      |                                                             [01;36m[Kdouble[m[K
+      |                                                            [32m[K%d[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:90:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 6 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   90 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"Spawned at x: %f y: %f theta: %f name: %s"[m[K, x, [32m[Ky[m[K, theta, turtle);
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K     [32m[K~[m[K
+      |                                                                                             [32m[K|[m[K
+      |                                                                                             [32m[Kint[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:90:67:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   90 |             RCLCPP_INFO(this->get_logger(), "Spawned at x: %f y: [01;36m[K%f[m[K theta: %f name: %s", x, y, theta, turtle);
+      |                                                                  [01;36m[K~^[m[K
+      |                                                                   [01;36m[K|[m[K
+      |                                                                   [01;36m[Kdouble[m[K
+      |                                                                  [32m[K%d[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:90:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 7 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   90 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"Spawned at x: %f y: %f theta: %f name: %s"[m[K, x, y, [32m[Ktheta[m[K, turtle);
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K        [32m[K~~~~~[m[K
+      |                                                                                                [32m[K|[m[K
+      |                                                                                                [32m[Kint[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:90:77:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   90 |             RCLCPP_INFO(this->get_logger(), "Spawned at x: %f y: %f theta: [01;36m[K%f[m[K name: %s", x, y, theta, turtle);
+      |                                                                            [01;36m[K~^[m[K
+      |                                                                             [01;36m[K|[m[K
+      |                                                                             [01;36m[Kdouble[m[K
+      |                                                                            [32m[K%d[m[K
+gmake[2]: *** [CMakeFiles/turtlecontrol_node.dir/build.make:76: CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/turtlecontrol_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] [32m[1mLinking CXX executable turtlespawn_node[0m
+[ 75%] Built target turtlespawn_node
+gmake: *** [Makefile:146: all] Error 2

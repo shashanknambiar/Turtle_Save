@@ -1,0 +1,27 @@
+[0.013s] Invoking command in '/home/ros/ros2_ws/build/turtle_save_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ros/ros2_ws/build/turtle_save_pkg -- -j22 -l22
+[0.102s] [ 50%] Built target turtlespawn_node
+[0.105s] [ 75%] [32mBuilding CXX object CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o[0m
+[6.272s] [100%] [32m[1mLinking CXX executable turtlecontrol_node[0m
+[6.603s] [100%] Built target turtlecontrol_node
+[6.613s] Invoked command in '/home/ros/ros2_ws/build/turtle_save_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ros/ros2_ws/build/turtle_save_pkg -- -j22 -l22
+[6.621s] Invoking command in '/home/ros/ros2_ws/build/turtle_save_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ros/ros2_ws/build/turtle_save_pkg
+[6.628s] -- Install configuration: ""
+[6.630s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/lib/turtle_save_pkg/turtlespawn_node
+[6.631s] -- Installing: /home/ros/ros2_ws/install/turtle_save_pkg/lib/turtle_save_pkg/turtlecontrol_node
+[6.634s] -- Set non-toolchain portion of runtime path of "/home/ros/ros2_ws/install/turtle_save_pkg/lib/turtle_save_pkg/turtlecontrol_node" to ""
+[6.635s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/ament_index/resource_index/package_run_dependencies/turtle_save_pkg
+[6.635s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/ament_index/resource_index/parent_prefix_path/turtle_save_pkg
+[6.635s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/ament_prefix_path.sh
+[6.635s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/ament_prefix_path.dsv
+[6.636s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/path.sh
+[6.636s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/path.dsv
+[6.636s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.bash
+[6.636s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.sh
+[6.636s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.zsh
+[6.636s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.dsv
+[6.636s] -- Installing: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/package.dsv
+[6.636s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/ament_index/resource_index/packages/turtle_save_pkg
+[6.636s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/cmake/turtle_save_pkgConfig.cmake
+[6.637s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/cmake/turtle_save_pkgConfig-version.cmake
+[6.637s] -- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/package.xml
+[6.638s] Invoked command in '/home/ros/ros2_ws/build/turtle_save_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ros/ros2_ws/build/turtle_save_pkg

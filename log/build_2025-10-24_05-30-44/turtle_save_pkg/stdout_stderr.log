@@ -1,0 +1,13 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o[0m
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleControl::[01;32m[KMoveTurtle[m[K(float, float, float)[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kangle[m[K’; did you mean ‘[01m[Kangular[m[K’?
+   31 |         msg.[01;31m[Kangle[m[K.z = theta;
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[Kangular[m[K
+gmake[2]: *** [CMakeFiles/turtlecontrol_node.dir/build.make:76: CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/turtlecontrol_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] [32m[1mLinking CXX executable turtlespawn_node[0m
+[ 75%] Built target turtlespawn_node
+gmake: *** [Makefile:146: all] Error 2

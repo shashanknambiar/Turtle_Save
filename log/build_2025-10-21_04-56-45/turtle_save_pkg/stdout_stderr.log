@@ -1,0 +1,18 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o[0m
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:24:22:[m[K [01;31m[Kerror: [m[K‘[01m[Krd[m[K’ is not a type
+   24 |     std::mt19937 gen([01;31m[Krd[m[K());
+      |                      [01;31m[K^~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:25:43:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   25 |     std::uniform_int_distribution<> distr([01;31m[K0[m[K, 11);
+      |                                           [01;31m[K^[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:25:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In member function ‘[01m[Kint TurtleSpawnNode::[01;32m[KGetRandomCoordinate[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:35:22:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kstd::mt19937 TurtleSpawnNode::[01;32m[Kgen[m[K(int (*)())[m[K’
+   35 |         return distr([01;31m[Kgen[m[K);
+      |                      [01;31m[K^~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:24:18:[m[K [01;36m[Knote: [m[Kdeclared here
+   24 |     std::mt19937 [01;36m[Kgen[m[K(rd());
+      |                  [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/turtlespawn_node.dir/build.make:76: CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlespawn_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

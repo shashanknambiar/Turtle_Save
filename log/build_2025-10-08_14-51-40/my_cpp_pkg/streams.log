@@ -1,0 +1,20 @@
+[0.008s] Invoking command in '/home/ros/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ros/ros2_ws/build/my_cpp_pkg -- -j22 -l22
+[0.051s] [ 25%] [32mBuilding CXX object CMakeFiles/number_publisher_node.dir/src/publisher.cpp.o[0m
+[0.052s] [ 75%] Built target cpp_node
+[1.628s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/publisher.cpp:16:56:[m[K [01;31m[Kerror: [m[K‘[01m[KSharePtr[m[K’ in ‘[01m[Kclass rclcpp::Publisher<example_interfaces::msg::Int64_<std::allocator<void> > >[m[K’ does not name a type
+[1.628s]    16 |     rclcpp::Publisher<example_interfaces::msg::Int64>::[01;31m[KSharePtr[m[K publisher_;
+[1.628s]       |                                                        [01;31m[K^~~~~~~~[m[K
+[1.640s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/publisher.cpp:[m[K In constructor ‘[01m[KMyNode::[01;32m[KMyNode[m[K()[m[K’:
+[1.640s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/publisher.cpp:11:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[1.640s]    11 |         [01;31m[Kpublisher_[m[K = this->create_publisher<example_interfaces::msg::Int64>("number_publisher", 10);
+[1.640s]       |         [01;31m[K^~~~~~~~~~[m[K
+[1.640s]       |         [32m[Krmw_publisher_t[m[K
+[1.648s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/publisher.cpp:[m[K In member function ‘[01m[Kvoid MyNode::[01;32m[KtimerCallBack[m[K()[m[K’:
+[1.648s] [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/publisher.cpp:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[1.648s]    23 |         [01;31m[Kpublisher_[m[K->publish(msg);
+[1.648s]       |         [01;31m[K^~~~~~~~~~[m[K
+[1.648s]       |         [32m[Krmw_publisher_t[m[K
+[2.368s] gmake[2]: *** [CMakeFiles/number_publisher_node.dir/build.make:76: CMakeFiles/number_publisher_node.dir/src/publisher.cpp.o] Error 1
+[2.368s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/number_publisher_node.dir/all] Error 2
+[2.368s] gmake: *** [Makefile:146: all] Error 2
+[2.369s] Invoked command in '/home/ros/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ros/ros2_ws/build/my_cpp_pkg -- -j22 -l22

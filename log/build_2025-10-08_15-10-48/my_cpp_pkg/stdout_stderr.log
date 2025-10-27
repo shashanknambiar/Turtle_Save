@@ -1,0 +1,37 @@
+[ 33%] Built target cpp_node
+[ 66%] Built target number_publisher_node
+[ 83%] [32mBuilding CXX object CMakeFiles/number_counter_node.dir/src/numbercounter.cpp.o[0m
+[01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:[m[K In constructor ‘[01m[KNumberCounterNode::[01;32m[KNumberCounterNode[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:13:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass NumberCounterNode[m[K’ has no member named ‘[01m[Kcreaete_subscription[m[K’; did you mean ‘[01m[Kcreate_subscription[m[K’?
+   13 |         subscriber_ = this->[01;31m[Kcreaete_subscription[m[K<example_interfaces::msg::Int64>("number", 10, std::bind(&NumberCounterNode::EventRecievedCallBack, this, _1));
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                             [32m[Kcreate_subscription[m[K
+[01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:13:80:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   13 |         subscriber_ = this->creaete_subscription<example_interfaces::msg::Int64[01;31m[K>[m[K("number", 10, std::bind(&NumberCounterNode::EventRecievedCallBack, this, _1));
+      |                                                                                [01;31m[K^[m[K
+[01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:13:82:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   13 |         subscriber_ = this->creaete_subscription<example_interfaces::msg::Int64>([01;35m[K"number"[m[K, 10, std::bind(&NumberCounterNode::EventRecievedCallBack, this, _1));
+      |                                                                                  [01;35m[K^~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:19[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:1[m[K:
+/usr/include/c++/13/functional: In instantiation of ‘[01m[Kstruct std::_Bind_check_arity<void (NumberCounterNode::*)(), NumberCounterNode*, const std::_Placeholder<1>&>[m[K’:
+[01m[K/usr/include/c++/13/functional:859:12:[m[K   required from ‘[01m[Kstruct std::_Bind_helper<false, void (NumberCounterNode::*)(), NumberCounterNode*, const std::_Placeholder<1>&>[m[K’
+[01m[K/usr/include/c++/13/functional:881:5:[m[K   required by substitution of ‘[01m[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::[01;32m[Kbind[m[K(_Func&&, _BoundArgs&& ...) [35m[K[with _Func = void (NumberCounterNode::*)(); _BoundArgs = {NumberCounterNode*, const std::_Placeholder<1>&}][m[K[m[K’
+[01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:13:105:[m[K   required from here
+[01m[K/usr/include/c++/13/functional:847:21:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Wrong number of arguments for pointer-to-member
+  846 |       static_assert(_Varargs::[01;31m[Kvalue[m[K
+      |                               [01;31m[K~~~~~[m[K
+  847 | [01;31m[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1[m[K
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  848 | [01;31m[K                    : sizeof...(_BoundArgs) == _Arity::value + 1[m[K,
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/functional:847:21:[m[K [01;36m[Knote: [m[K‘[01m[K(false ? (2 >= (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)) : (2 == (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)))[m[K’ evaluates to false
+[01m[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:13:157:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   13 |         subscriber_ = this->creaete_subscription<example_interfaces::msg::Int64>("number", 10, std::bind(&NumberCounterNode::EventRecievedCallBack, this, _1[01;35m[K)[m[K);
+      |                                                                                                                                                             [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/number_counter_node.dir/build.make:76: CMakeFiles/number_counter_node.dir/src/numbercounter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/number_counter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

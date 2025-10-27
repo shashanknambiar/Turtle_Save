@@ -1,0 +1,9 @@
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleSpawnNode::[01;32m[KRemoveTurtle[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:98:29:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kchar*[m[K’ in initialization
+   98 |         char* turtle = [01;31m[Kmsg->data[m[K;
+      |                        [01;31m[K~~~~~^~~~[m[K
+      |                             [01;31m[K|[m[K
+      |                             [01;31m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type {aka std::__cxx11::basic_string<char>}[m[K
+gmake[2]: *** [CMakeFiles/turtlespawn_node.dir/build.make:76: CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtlespawn_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

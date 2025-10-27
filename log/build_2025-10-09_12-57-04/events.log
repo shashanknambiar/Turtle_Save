@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000675] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000832] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.013150] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.014612] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.014652] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/ros2_ws/build/my_cpp_pkg', '--', '-j22', '-l22'], 'cwd': '/home/ros/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/ros', 'OLDPWD': '/home/ros/ros2_ws/build', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ros/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ros', 'NAME': 'Zphi', 'WSL_INTEROP': '/run/WSL/576_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.2.13-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/shash/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/shash/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.10.7-hotspot/bin:/mnt/c/Users/shash/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shash/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shash/AppData/Roaming/npm:/mnt/c/Users/shash/.dotnet/tools:/snap/bin', 'WT_SESSION': 'bd214ce3-26a2-4036-a979-f1bcb7fbeb25', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ros/ros2_ws/build/my_cpp_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.099851] (-) TimerEvent: {}
+[0.200237] (-) TimerEvent: {}
+[0.204410] (my_cpp_pkg) StdoutLine: {'line': b'[ 33%] Built target cpp_node\n'}
+[0.204630] (my_cpp_pkg) StdoutLine: {'line': b'[ 66%] Built target number_publisher_node\n'}
+[0.207485] (my_cpp_pkg) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/number_counter_node.dir/src/numbercounter.cpp.o\x1b[0m\n'}
+[0.300318] (-) TimerEvent: {}
+[0.400643] (-) TimerEvent: {}
+[0.501017] (-) TimerEvent: {}
+[0.601322] (-) TimerEvent: {}
+[0.701647] (-) TimerEvent: {}
+[0.801903] (-) TimerEvent: {}
+[0.902218] (-) TimerEvent: {}
+[1.002522] (-) TimerEvent: {}
+[1.102781] (-) TimerEvent: {}
+[1.203030] (-) TimerEvent: {}
+[1.303341] (-) TimerEvent: {}
+[1.403624] (-) TimerEvent: {}
+[1.503897] (-) TimerEvent: {}
+[1.604236] (-) TimerEvent: {}
+[1.704521] (-) TimerEvent: {}
+[1.804794] (-) TimerEvent: {}
+[1.905112] (-) TimerEvent: {}
+[2.005479] (-) TimerEvent: {}
+[2.106001] (-) TimerEvent: {}
+[2.206422] (-) TimerEvent: {}
+[2.307085] (-) TimerEvent: {}
+[2.401685] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NumberCounterNode::\x1b[01;32m\x1b[KEventRecievedCallBack\x1b[m\x1b[K(example_interfaces::msg::Int64_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.402025] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:25:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Km\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.402114] (my_cpp_pkg) StderrLine: {'line': b'   25 |     void EventRecievedCallBack(\x1b[01;35m\x1b[Kconst example_interfaces::msg::Int64::SharedPtr m\x1b[m\x1b[K)\n'}
+[2.402185] (my_cpp_pkg) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.403841] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NumberCounterNode::\x1b[01;32m\x1b[KEventResetCounter\x1b[m\x1b[K(std::shared_ptr<example_interfaces::srv::SetBool_Request_<std::allocator<void> > >, std::shared_ptr<example_interfaces::srv::SetBool_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.404204] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/my_cpp_pkg/src/numbercounter.cpp:34:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.404257] (my_cpp_pkg) StderrLine: {'line': b'   34 |         \x1b[01;35m\x1b[Kconst std::shared_ptr<example_interfaces::srv::SetBool::Response> response\x1b[m\x1b[K)\n'}
+[2.404356] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[2.407110] (-) TimerEvent: {}
+[2.507324] (-) TimerEvent: {}
+[2.607638] (-) TimerEvent: {}
+[2.708000] (-) TimerEvent: {}
+[2.808314] (-) TimerEvent: {}
+[2.908755] (-) TimerEvent: {}
+[3.009046] (-) TimerEvent: {}
+[3.109370] (-) TimerEvent: {}
+[3.209688] (-) TimerEvent: {}
+[3.310042] (-) TimerEvent: {}
+[3.410570] (-) TimerEvent: {}
+[3.510973] (-) TimerEvent: {}
+[3.611423] (-) TimerEvent: {}
+[3.711703] (-) TimerEvent: {}
+[3.812015] (-) TimerEvent: {}
+[3.912412] (-) TimerEvent: {}
+[4.012792] (-) TimerEvent: {}
+[4.113121] (-) TimerEvent: {}
+[4.213535] (-) TimerEvent: {}
+[4.313866] (-) TimerEvent: {}
+[4.414467] (-) TimerEvent: {}
+[4.514832] (-) TimerEvent: {}
+[4.615155] (-) TimerEvent: {}
+[4.715528] (-) TimerEvent: {}
+[4.815857] (-) TimerEvent: {}
+[4.916190] (-) TimerEvent: {}
+[5.016475] (-) TimerEvent: {}
+[5.116755] (-) TimerEvent: {}
+[5.217063] (-) TimerEvent: {}
+[5.317347] (-) TimerEvent: {}
+[5.417816] (-) TimerEvent: {}
+[5.518103] (-) TimerEvent: {}
+[5.618423] (-) TimerEvent: {}
+[5.718714] (-) TimerEvent: {}
+[5.819087] (-) TimerEvent: {}
+[5.919454] (-) TimerEvent: {}
+[6.019778] (-) TimerEvent: {}
+[6.120082] (-) TimerEvent: {}
+[6.220471] (-) TimerEvent: {}
+[6.320839] (-) TimerEvent: {}
+[6.421257] (-) TimerEvent: {}
+[6.521707] (-) TimerEvent: {}
+[6.622122] (-) TimerEvent: {}
+[6.687814] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable number_counter_node\x1b[0m\n'}
+[6.722208] (-) TimerEvent: {}
+[6.822512] (-) TimerEvent: {}
+[6.923023] (-) TimerEvent: {}
+[6.994082] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target number_counter_node\n'}
+[7.001222] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[7.002036] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[7.008937] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/ros/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/ros', 'OLDPWD': '/home/ros/ros2_ws/build', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ros/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ros', 'NAME': 'Zphi', 'WSL_INTEROP': '/run/WSL/576_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.2.13-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/shash/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/shash/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.10.7-hotspot/bin:/mnt/c/Users/shash/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shash/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shash/AppData/Roaming/npm:/mnt/c/Users/shash/.dotnet/tools:/snap/bin', 'WT_SESSION': 'bd214ce3-26a2-4036-a979-f1bcb7fbeb25', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ros/ros2_ws/build/my_cpp_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[7.016237] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.018401] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node\n'}
+[7.019816] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_publisher_node\n'}
+[7.020875] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/ros/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter_node\n'}
+[7.023061] (-) TimerEvent: {}
+[7.024327] (my_cpp_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ros/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter_node" to ""\n'}
+[7.024422] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/ros/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[7.024979] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[7.025067] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[7.025201] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[7.025297] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[7.025414] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[7.025446] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[7.025475] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[7.025505] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[7.025534] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[7.025562] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[7.025903] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[7.026158] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[7.026202] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[7.026233] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/ros/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[7.027674] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[7.048118] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[7.049215] (-) EventReactorShutdown: {}

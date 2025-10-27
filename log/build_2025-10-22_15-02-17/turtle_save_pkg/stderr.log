@@ -1,0 +1,5 @@
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleSpawnNode::[01;32m[KHandleGetNextTurtleService[m[K(std::shared_ptr<custom_interfaces::srv::TargetTurtleInfo_Request_<std::allocator<void> > >, std::shared_ptr<custom_interfaces::srv::TargetTurtleInfo_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:74:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   74 | id HandleGetNextTurtleService([01;35m[Kconst std::shared_ptr<custom_interfaces::srv::TargetTurtleInfo::Request> request[m[K,
+      |                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+

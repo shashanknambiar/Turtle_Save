@@ -1,0 +1,4 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable turtlespawn_node[0m
+[ 75%] Built target turtlespawn_node

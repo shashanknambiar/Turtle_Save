@@ -1,0 +1,10 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o[0m
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleSpawnNode::[01;32m[KCreateRandomTurtle[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:50:59:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Kchar*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   50 |             char* turtle = [01;31m[Kfuture_result.get()->name.c_str()[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                           [01;31m[K|[m[K
+      |                                                           [01;31m[Kconst char*[m[K
+gmake[2]: *** [CMakeFiles/turtlespawn_node.dir/build.make:76: CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlespawn_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

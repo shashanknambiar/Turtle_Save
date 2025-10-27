@@ -1,0 +1,68 @@
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfloat32[m[K’ does not name a type; did you mean ‘[01m[K_Float32[m[K’?
+   26 |     [01;31m[Kfloat32[m[K GetRandomCoordinate() //returns a coordinate for turtlesim
+      |     [01;31m[K^~~~~~~[m[K
+      |     [32m[K_Float32[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In constructor ‘[01m[KTurtleSpawnNode::[01;32m[KTurtleSpawnNode[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:10:47:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KTurtleSpawnNode[m[K’ does not have any field named ‘[01m[Kcount[m[K’
+   10 |     TurtleSpawnNode() : Node("turtle_spawn"), [01;31m[Kcount[m[K(0)
+      |                                               [01;31m[K^~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleSpawnNode::[01;32m[KCreateRandomTurtle[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:49:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<turtlesim::srv::Spawn, __gnu_cxx::_S_atomic, false, false>::element_type = struct turtlesim::srv::Spawn[m[K’ {aka ‘[01m[Kstruct turtlesim::srv::Spawn[m[K’} has no member named ‘[01m[Kx[m[K’
+   49 |         request->[01;31m[Kx[m[K = GetRandomCoordinate();
+      |                  [01;31m[K^[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:49:22:[m[K [01;31m[Kerror: [m[K‘[01m[KGetRandomCoordinate[m[K’ was not declared in this scope
+   49 |         request->x = [01;31m[KGetRandomCoordinate[m[K();
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:50:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<turtlesim::srv::Spawn, __gnu_cxx::_S_atomic, false, false>::element_type = struct turtlesim::srv::Spawn[m[K’ {aka ‘[01m[Kstruct turtlesim::srv::Spawn[m[K’} has no member named ‘[01m[Ky[m[K’
+   50 |         request->[01;31m[Ky[m[K = GetRandomCoordinate();
+      |                  [01;31m[K^[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:51:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<turtlesim::srv::Spawn, __gnu_cxx::_S_atomic, false, false>::element_type = struct turtlesim::srv::Spawn[m[K’ {aka ‘[01m[Kstruct turtlesim::srv::Spawn[m[K’} has no member named ‘[01m[Ktheta[m[K’
+   51 |         request->[01;31m[Ktheta[m[K = 0.0;
+      |                  [01;31m[K^~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:53:62:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Client<turtlesim::srv::Spawn>::async_send_request(std::shared_ptr<turtlesim::srv::Spawn>&)[m[K’
+   53 |          auto future_result = [01;31m[KspwanClient->async_send_request(request)[m[K;
+      |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:672:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::shared_ptr<turtlesim::srv::Spawn_Response_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureAndRequestId rclcpp::Client<ServiceT>::[01;32m[Kasync_send_request[m[K(SharedRequest, CallbackT&&) [35m[K[with typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<typename ServiceT::Response::SharedPtr>)> >::value>::type* <anonymous> = CallbackT; ServiceT = turtlesim::srv::Spawn][m[K[m[K’
+  672 |   [01;36m[Kasync_send_request[m[K(SharedRequest request, CallbackT && cb)
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:672:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:53:62:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   53 |          auto future_result = [01;36m[KspwanClient->async_send_request(request)[m[K;
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:703:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<std::shared_ptr<turtlesim::srv::Spawn_Request_<std::allocator<void> > >, std::shared_ptr<turtlesim::srv::Spawn_Response_<std::allocator<void> > > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureWithRequestAndRequestId rclcpp::Client<ServiceT>::[01;32m[Kasync_send_request[m[K(SharedRequest, CallbackT&&) [35m[K[with typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<typename ServiceT::Request::SharedPtr, typename ServiceT::Response::SharedPtr> >)> >::value>::type* <anonymous> = CallbackT; ServiceT = turtlesim::srv::Spawn][m[K[m[K’
+  703 |   [01;36m[Kasync_send_request[m[K(SharedRequest request, CallbackT && cb)
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:703:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:53:62:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   53 |          auto future_result = [01;36m[KspwanClient->async_send_request(request)[m[K;
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:637:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Client<ServiceT>::FutureAndRequestId rclcpp::Client<ServiceT>::[01;32m[Kasync_send_request[m[K(SharedRequest) [35m[K[with ServiceT = turtlesim::srv::Spawn; SharedRequest = std::shared_ptr<turtlesim::srv::Spawn_Request_<std::allocator<void> > >][m[K[m[K’
+  637 |   [01;36m[Kasync_send_request[m[K(SharedRequest request)
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:637:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[Kturtlesim::srv::Spawn[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Kturtlesim::srv::Spawn_Request_<std::allocator<void> >[m[K>[m[K’
+  637 |   async_send_request([01;36m[KSharedRequest request[m[K)
+      |                      [01;36m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:59:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   59 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"Spawned turtle named: %s"[m[K, turtle);
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:59:69:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   59 |             RCLCPP_INFO(this->get_logger(), "Spawned turtle named: [01;36m[K%s[m[K", turtle);
+      |                                                                    [01;36m[K~^[m[K
+      |                                                                     [01;36m[K|[m[K
+      |                                                                     [01;36m[Kchar*[m[K
+gmake[2]: *** [CMakeFiles/turtlespawn_node.dir/build.make:76: CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlespawn_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

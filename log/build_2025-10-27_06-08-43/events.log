@@ -1,0 +1,128 @@
+[0.000000] (-) TimerEvent: {}
+[0.000737] (-) JobUnselected: {'identifier': 'custom_interfaces'}
+[0.000842] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.000867] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.000891] (turtle_save_pkg) JobQueued: {'identifier': 'turtle_save_pkg', 'dependencies': OrderedDict({'custom_interfaces': '/home/ros/ros2_ws/install/custom_interfaces'})}
+[0.000918] (turtle_save_pkg) JobStarted: {'identifier': 'turtle_save_pkg'}
+[0.084941] (turtle_save_pkg) JobProgress: {'identifier': 'turtle_save_pkg', 'progress': 'cmake'}
+[0.085703] (turtle_save_pkg) JobProgress: {'identifier': 'turtle_save_pkg', 'progress': 'build'}
+[0.086115] (turtle_save_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/ros2_ws/build/turtle_save_pkg', '--', '-j22', '-l22'], 'cwd': '/home/ros/ros2_ws/build/turtle_save_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ros/ros2_ws/install/custom_interfaces/lib:/home/ros/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ros', 'OLDPWD': '/home/ros', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ros/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ros', 'NAME': 'Zphi', 'WSL_INTEROP': '/run/WSL/609_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.2.13-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/shash/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/shash/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.10.7-hotspot/bin:/mnt/c/Users/shash/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shash/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shash/AppData/Roaming/npm:/mnt/c/Users/shash/.dotnet/tools:/snap/bin', 'WT_SESSION': '2008467b-33f2-4162-915a-7c6eeb58dbde', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/home/ros/ros2_ws/install/custom_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ros/ros2_ws/build/turtle_save_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros/ros2_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/ros/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ros/ros2_ws/install/custom_interfaces:/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.099765] (-) TimerEvent: {}
+[0.158067] (turtle_save_pkg) StdoutLine: {'line': b'[ 50%] Built target turtlespawn_node\n'}
+[0.161596] (turtle_save_pkg) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o\x1b[0m\n'}
+[0.199906] (-) TimerEvent: {}
+[0.300243] (-) TimerEvent: {}
+[0.400558] (-) TimerEvent: {}
+[0.500875] (-) TimerEvent: {}
+[0.601222] (-) TimerEvent: {}
+[0.701565] (-) TimerEvent: {}
+[0.801955] (-) TimerEvent: {}
+[0.902296] (-) TimerEvent: {}
+[1.002636] (-) TimerEvent: {}
+[1.103050] (-) TimerEvent: {}
+[1.203643] (-) TimerEvent: {}
+[1.304240] (-) TimerEvent: {}
+[1.404675] (-) TimerEvent: {}
+[1.505126] (-) TimerEvent: {}
+[1.605544] (-) TimerEvent: {}
+[1.705936] (-) TimerEvent: {}
+[1.806332] (-) TimerEvent: {}
+[1.906782] (-) TimerEvent: {}
+[2.007157] (-) TimerEvent: {}
+[2.107533] (-) TimerEvent: {}
+[2.207980] (-) TimerEvent: {}
+[2.308449] (-) TimerEvent: {}
+[2.408854] (-) TimerEvent: {}
+[2.509232] (-) TimerEvent: {}
+[2.609624] (-) TimerEvent: {}
+[2.710089] (-) TimerEvent: {}
+[2.810501] (-) TimerEvent: {}
+[2.910935] (-) TimerEvent: {}
+[3.011374] (-) TimerEvent: {}
+[3.111754] (-) TimerEvent: {}
+[3.212205] (-) TimerEvent: {}
+[3.312606] (-) TimerEvent: {}
+[3.413071] (-) TimerEvent: {}
+[3.513518] (-) TimerEvent: {}
+[3.613922] (-) TimerEvent: {}
+[3.714315] (-) TimerEvent: {}
+[3.814698] (-) TimerEvent: {}
+[3.915076] (-) TimerEvent: {}
+[4.015507] (-) TimerEvent: {}
+[4.115957] (-) TimerEvent: {}
+[4.216335] (-) TimerEvent: {}
+[4.316713] (-) TimerEvent: {}
+[4.417096] (-) TimerEvent: {}
+[4.517853] (-) TimerEvent: {}
+[4.618469] (-) TimerEvent: {}
+[4.718908] (-) TimerEvent: {}
+[4.819391] (-) TimerEvent: {}
+[4.920024] (-) TimerEvent: {}
+[5.020412] (-) TimerEvent: {}
+[5.120763] (-) TimerEvent: {}
+[5.221128] (-) TimerEvent: {}
+[5.321467] (-) TimerEvent: {}
+[5.421844] (-) TimerEvent: {}
+[5.522271] (-) TimerEvent: {}
+[5.622620] (-) TimerEvent: {}
+[5.723022] (-) TimerEvent: {}
+[5.823385] (-) TimerEvent: {}
+[5.923835] (-) TimerEvent: {}
+[6.024275] (-) TimerEvent: {}
+[6.124691] (-) TimerEvent: {}
+[6.225067] (-) TimerEvent: {}
+[6.325594] (-) TimerEvent: {}
+[6.425971] (-) TimerEvent: {}
+[6.526333] (-) TimerEvent: {}
+[6.626667] (-) TimerEvent: {}
+[6.727137] (-) TimerEvent: {}
+[6.827490] (-) TimerEvent: {}
+[6.927892] (-) TimerEvent: {}
+[7.028275] (-) TimerEvent: {}
+[7.128601] (-) TimerEvent: {}
+[7.229086] (-) TimerEvent: {}
+[7.329427] (-) TimerEvent: {}
+[7.429797] (-) TimerEvent: {}
+[7.530156] (-) TimerEvent: {}
+[7.630525] (-) TimerEvent: {}
+[7.730907] (-) TimerEvent: {}
+[7.831313] (-) TimerEvent: {}
+[7.931727] (-) TimerEvent: {}
+[8.032131] (-) TimerEvent: {}
+[8.132445] (-) TimerEvent: {}
+[8.232781] (-) TimerEvent: {}
+[8.333239] (-) TimerEvent: {}
+[8.433580] (-) TimerEvent: {}
+[8.533975] (-) TimerEvent: {}
+[8.634338] (-) TimerEvent: {}
+[8.647486] (turtle_save_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtlecontrol_node\x1b[0m\n'}
+[8.734510] (-) TimerEvent: {}
+[8.834948] (-) TimerEvent: {}
+[8.935321] (-) TimerEvent: {}
+[9.009038] (turtle_save_pkg) StdoutLine: {'line': b'[100%] Built target turtlecontrol_node\n'}
+[9.016671] (turtle_save_pkg) CommandEnded: {'returncode': 0}
+[9.017918] (turtle_save_pkg) JobProgress: {'identifier': 'turtle_save_pkg', 'progress': 'install'}
+[9.024515] (turtle_save_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/ros2_ws/build/turtle_save_pkg'], 'cwd': '/home/ros/ros2_ws/build/turtle_save_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ros/ros2_ws/install/custom_interfaces/lib:/home/ros/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ros', 'OLDPWD': '/home/ros', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ros/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ros', 'NAME': 'Zphi', 'WSL_INTEROP': '/run/WSL/609_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.2.13-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/shash/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/shash/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.10.7-hotspot/bin:/mnt/c/Users/shash/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shash/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shash/AppData/Roaming/npm:/mnt/c/Users/shash/.dotnet/tools:/snap/bin', 'WT_SESSION': '2008467b-33f2-4162-915a-7c6eeb58dbde', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/home/ros/ros2_ws/install/custom_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ros/ros2_ws/build/turtle_save_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros/ros2_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/ros/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ros/ros2_ws/install/custom_interfaces:/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[9.029972] (turtle_save_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.031874] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/lib/turtle_save_pkg/turtlespawn_node\n'}
+[9.032034] (turtle_save_pkg) StdoutLine: {'line': b'-- Installing: /home/ros/ros2_ws/install/turtle_save_pkg/lib/turtle_save_pkg/turtlecontrol_node\n'}
+[9.035446] (-) TimerEvent: {}
+[9.036805] (turtle_save_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ros/ros2_ws/install/turtle_save_pkg/lib/turtle_save_pkg/turtlecontrol_node" to ""\n'}
+[9.036945] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/ament_index/resource_index/package_run_dependencies/turtle_save_pkg\n'}
+[9.037098] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/ament_index/resource_index/parent_prefix_path/turtle_save_pkg\n'}
+[9.037282] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/ament_prefix_path.sh\n'}
+[9.037480] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/ament_prefix_path.dsv\n'}
+[9.037970] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/path.sh\n'}
+[9.038102] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/environment/path.dsv\n'}
+[9.038189] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.bash\n'}
+[9.038262] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.sh\n'}
+[9.038343] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.zsh\n'}
+[9.038415] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/local_setup.dsv\n'}
+[9.038483] (turtle_save_pkg) StdoutLine: {'line': b'-- Installing: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/package.dsv\n'}
+[9.038702] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/ament_index/resource_index/packages/turtle_save_pkg\n'}
+[9.039097] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/cmake/turtle_save_pkgConfig.cmake\n'}
+[9.039344] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/cmake/turtle_save_pkgConfig-version.cmake\n'}
+[9.039876] (turtle_save_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/ros/ros2_ws/install/turtle_save_pkg/share/turtle_save_pkg/package.xml\n'}
+[9.040758] (turtle_save_pkg) CommandEnded: {'returncode': 0}
+[9.058139] (turtle_save_pkg) JobEnded: {'identifier': 'turtle_save_pkg', 'rc': 0}
+[9.059390] (-) EventReactorShutdown: {}

@@ -1,0 +1,29 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o[0m
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:17:42:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   17 |     rclcpp::Client<turtlesim::srv::Spawn>[01;31m[KSharedPtr[m[K spwanClient;
+      |                                          [01;31m[K^~~~~~~~~[m[K
+      |                                                   [32m[K;[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:17:52:[m[K [01;31m[Kerror: [m[K‘[01m[KspwanClient[m[K’ does not name a type
+   17 |     rclcpp::Client<turtlesim::srv::Spawn>SharedPtr [01;31m[KspwanClient[m[K;
+      |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In constructor ‘[01m[KTurtleSpawnNode::[01;32m[KTurtleSpawnNode[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:8:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Client<turtlesim::srv::Spawn>::Client()[m[K’
+    8 |     TurtleSpawnNode() : Node("turtle_spawn"), count(0[01;31m[K)[m[K
+      |                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:495:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Client<ServiceT>::[01;32m[KClient[m[K(rclcpp::node_interfaces::NodeBaseInterface*, rclcpp::node_interfaces::NodeGraphInterface::SharedPtr, const std::string&, rcl_client_options_t&) [35m[K[with ServiceT = turtlesim::srv::Spawn; rclcpp::node_interfaces::NodeGraphInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeGraphInterface>; std::string = std::__cxx11::basic_string<char>; rcl_client_options_t = rcl_client_options_s][m[K[m[K’
+  495 |   [01;36m[KClient[m[K(
+      |   [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:495:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 0 provided
+gmake[2]: *** [CMakeFiles/turtlespawn_node.dir/build.make:76: CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlespawn_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

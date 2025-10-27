@@ -1,0 +1,126 @@
+[0.000000] (-) TimerEvent: {}
+[0.000350] (-) JobUnselected: {'identifier': 'custom_interfaces'}
+[0.000389] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.000413] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.000423] (turtle_save_pkg) JobQueued: {'identifier': 'turtle_save_pkg', 'dependencies': OrderedDict({'custom_interfaces': '/home/ros/ros2_ws/install/custom_interfaces'})}
+[0.000864] (turtle_save_pkg) JobStarted: {'identifier': 'turtle_save_pkg'}
+[0.098913] (turtle_save_pkg) JobProgress: {'identifier': 'turtle_save_pkg', 'progress': 'cmake'}
+[0.099750] (-) TimerEvent: {}
+[0.100656] (turtle_save_pkg) JobProgress: {'identifier': 'turtle_save_pkg', 'progress': 'build'}
+[0.100884] (turtle_save_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/ros2_ws/build/turtle_save_pkg', '--', '-j22', '-l22'], 'cwd': '/home/ros/ros2_ws/build/turtle_save_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ros/ros2_ws/install/custom_interfaces/lib:/home/ros/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/ros', 'OLDPWD': '/home/ros', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ros/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ros', 'NAME': 'Zphi', 'WSL_INTEROP': '/run/WSL/609_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.2.13-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/shash/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/shash/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.10.7-hotspot/bin:/mnt/c/Users/shash/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shash/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shash/AppData/Roaming/npm:/mnt/c/Users/shash/.dotnet/tools:/snap/bin', 'WT_SESSION': '2008467b-33f2-4162-915a-7c6eeb58dbde', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/home/ros/ros2_ws/install/custom_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ros/ros2_ws/build/turtle_save_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros/ros2_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/ros/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ros/ros2_ws/install/custom_interfaces:/home/ros/ros2_ws/install/turtle_save_pkg:/home/ros/ros2_ws/install/my_robot_interfaces:/home/ros/ros2_ws/install/my_cpp_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[0.199924] (-) TimerEvent: {}
+[0.226799] (turtle_save_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o\x1b[0m\n'}
+[0.227907] (turtle_save_pkg) StdoutLine: {'line': b'[ 75%] Built target turtlespawn_node\n'}
+[0.300102] (-) TimerEvent: {}
+[0.400433] (-) TimerEvent: {}
+[0.500804] (-) TimerEvent: {}
+[0.601139] (-) TimerEvent: {}
+[0.701486] (-) TimerEvent: {}
+[0.801992] (-) TimerEvent: {}
+[0.902417] (-) TimerEvent: {}
+[1.002758] (-) TimerEvent: {}
+[1.103090] (-) TimerEvent: {}
+[1.203468] (-) TimerEvent: {}
+[1.304007] (-) TimerEvent: {}
+[1.404504] (-) TimerEvent: {}
+[1.505049] (-) TimerEvent: {}
+[1.605561] (-) TimerEvent: {}
+[1.706053] (-) TimerEvent: {}
+[1.806428] (-) TimerEvent: {}
+[1.906811] (-) TimerEvent: {}
+[2.007262] (-) TimerEvent: {}
+[2.013763] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:84:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.014552] (turtle_save_pkg) StderrLine: {'line': b'   84 |     void TurtleSaveAck(\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String turtleName)\n'}
+[2.014652] (turtle_save_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.014722] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:84:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[KturtleName\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.014787] (turtle_save_pkg) StderrLine: {'line': b'   84 |     void TurtleSaveAck(std_msgs::msg::String \x1b[01;31m\x1b[KturtleName\x1b[m\x1b[K)\n'}
+[2.014848] (turtle_save_pkg) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.039848] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:109:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.040031] (turtle_save_pkg) StderrLine: {'line': b'  109 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>::SharedPtr removeTurtle;\n'}
+[2.040069] (turtle_save_pkg) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.040102] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:109:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.040321] (turtle_save_pkg) StderrLine: {'line': b'  109 |     rclcpp::Publisher<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr removeTurtle;\n'}
+[2.040420] (turtle_save_pkg) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.040584] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:109:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.040632] (turtle_save_pkg) StderrLine: {'line': b'  109 |     rclcpp::Publisher<std_msgs::msg::String>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K removeTurtle;\n'}
+[2.040666] (turtle_save_pkg) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.040697] (turtle_save_pkg) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.042677] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:109:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KremoveTurtle\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.042740] (turtle_save_pkg) StderrLine: {'line': b'  109 |     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[KremoveTurtle\x1b[m\x1b[K;\n'}
+[2.042774] (turtle_save_pkg) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.043506] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:110:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.043588] (turtle_save_pkg) StderrLine: {'line': b'  110 |     \x1b[01;31m\x1b[Krclcpp\x1b[m\x1b[K:Subscription<std_msgs::msg::String>::SharedPtr removeTurtleAck;\n'}
+[2.043620] (turtle_save_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.059838] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTurtleControl::\x1b[01;32m\x1b[KTurtleControl\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.059969] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:18:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KremoveTurtle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.060004] (turtle_save_pkg) StderrLine: {'line': b'   18 |         \x1b[01;31m\x1b[KremoveTurtle\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::String>("/RemoveTurtle", 10);\n'}
+[2.060076] (turtle_save_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.064046] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:18:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.064185] (turtle_save_pkg) StderrLine: {'line': b'   18 |         removeTurtle = this->create_publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>("/RemoveTurtle", 10);\n'}
+[2.064273] (turtle_save_pkg) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.064306] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:18:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.064338] (turtle_save_pkg) StderrLine: {'line': b'   18 |         removeTurtle = this->\x1b[01;31m\x1b[Kcreate_publisher<std_msgs::msg::String>\x1b[m\x1b[K("/RemoveTurtle", 10);\n'}
+[2.064367] (turtle_save_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.064397] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:18:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTurtleControl::create_publisher<<expression error> >(const char [14], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.064428] (turtle_save_pkg) StderrLine: {'line': b'   18 |         removeTurtle = \x1b[01;31m\x1b[Kthis->create_publisher<std_msgs::msg::String>("/RemoveTurtle", 10)\x1b[m\x1b[K;\n'}
+[2.064457] (turtle_save_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.065102] (turtle_save_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1663\x1b[m\x1b[K,\n'}
+[2.065207] (turtle_save_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.065244] (turtle_save_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.065274] (turtle_save_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[2.065302] (turtle_save_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:1\x1b[m\x1b[K:\n'}
+[2.065331] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:73:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_publisher\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.065361] (turtle_save_pkg) StderrLine: {'line': b'   73 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_publisher(\n'}
+[2.065394] (turtle_save_pkg) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.065520] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:73:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.065597] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:18:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.065659] (turtle_save_pkg) StderrLine: {'line': b'   18 |         removeTurtle = \x1b[01;31m\x1b[Kthis->create_publisher<std_msgs::msg::String>("/RemoveTurtle", 10)\x1b[m\x1b[K;\n'}
+[2.065708] (turtle_save_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.072551] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:19:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KremoveTurtleAck\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.072653] (turtle_save_pkg) StderrLine: {'line': b'   19 |         \x1b[01;31m\x1b[KremoveTurtleAck\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::String>("/TurtleRemoveComplete", 10,\n'}
+[2.072729] (turtle_save_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.072762] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:19:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.072791] (turtle_save_pkg) StderrLine: {'line': b'   19 |         removeTurtleAck = this->\x1b[01;31m\x1b[Kcreate_subscription<std_msgs::msg::String>\x1b[m\x1b[K("/TurtleRemoveComplete", 10,\n'}
+[2.072819] (turtle_save_pkg) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.074373] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:19:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTurtleControl::create_subscription<std_msgs>(const char [22], int, std::_Bind_helper<false, void (TurtleControl::*)(int), TurtleControl*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.074479] (turtle_save_pkg) StderrLine: {'line': b'   19 |         removeTurtleAck = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::String>("/TurtleRemoveComplete", 10,\x1b[m\x1b[K\n'}
+[2.074548] (turtle_save_pkg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.074589] (turtle_save_pkg) StderrLine: {'line': b'   20 | \x1b[01;31m\x1b[K                                        std::bind(&TurtleControl::TurtleSaveAck, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[2.074619] (turtle_save_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.074648] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.074680] (turtle_save_pkg) StderrLine: {'line': b'   92 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_subscription(\n'}
+[2.074707] (turtle_save_pkg) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.074735] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.076386] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtleControl::\x1b[01;32m\x1b[KTurtleSaveAck\x1b[m\x1b[K(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.076485] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:84:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.076603] (turtle_save_pkg) StderrLine: {'line': b'   84 |     void TurtleSaveAck(\x1b[01;35m\x1b[Kstd_msgs::msg::String\x1b[m\x1b[K turtleName)\n'}
+[2.076665] (turtle_save_pkg) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[2.082025] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtleControl::\x1b[01;32m\x1b[KSetTurtleToWait\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.082095] (turtle_save_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlecontrolnode.cpp:96:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KApplyVelocities\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KApplyTurtleVelocities\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.082127] (turtle_save_pkg) StderrLine: {'line': b'   96 |         \x1b[01;31m\x1b[KApplyVelocities\x1b[m\x1b[K(0,0);\n'}
+[2.082155] (turtle_save_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.082182] (turtle_save_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[KApplyTurtleVelocities\x1b[m\x1b[K\n'}
+[2.107633] (-) TimerEvent: {}
+[2.207988] (-) TimerEvent: {}
+[2.308415] (-) TimerEvent: {}
+[2.409075] (-) TimerEvent: {}
+[2.509633] (-) TimerEvent: {}
+[2.610039] (-) TimerEvent: {}
+[2.710378] (-) TimerEvent: {}
+[2.810751] (-) TimerEvent: {}
+[2.911134] (-) TimerEvent: {}
+[3.011501] (-) TimerEvent: {}
+[3.111858] (-) TimerEvent: {}
+[3.212196] (-) TimerEvent: {}
+[3.312587] (-) TimerEvent: {}
+[3.412999] (-) TimerEvent: {}
+[3.513369] (-) TimerEvent: {}
+[3.613725] (-) TimerEvent: {}
+[3.714109] (-) TimerEvent: {}
+[3.814667] (-) TimerEvent: {}
+[3.837877] (turtle_save_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/turtlecontrol_node.dir/build.make:76: CMakeFiles/turtlecontrol_node.dir/src/turtlecontrolnode.cpp.o] Error 1\n'}
+[3.838446] (turtle_save_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/turtlecontrol_node.dir/all] Error 2\n'}
+[3.839018] (turtle_save_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.842247] (turtle_save_pkg) CommandEnded: {'returncode': 2}
+[3.861443] (turtle_save_pkg) JobEnded: {'identifier': 'turtle_save_pkg', 'rc': 2}
+[3.871957] (-) EventReactorShutdown: {}

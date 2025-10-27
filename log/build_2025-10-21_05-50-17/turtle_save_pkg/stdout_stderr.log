@@ -1,0 +1,57 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o[0m
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In constructor ‘[01m[KTurtleSpawnNode::[01;32m[KTurtleSpawnNode[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:10:47:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KTurtleSpawnNode[m[K’ does not have any field named ‘[01m[Kcount[m[K’
+   10 |     TurtleSpawnNode() : Node("turtle_spawn"), [01;31m[Kcount[m[K(0)
+      |                                               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:1[m[K:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In member function ‘[01m[Kvoid TurtleSpawnNode::[01;32m[KCreateRandomTurtle[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:29:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::count[m[K’?
+   29 |         RCLCPP_INFO(this->get_logger(), "Creating turtle", [01;31m[Kcount[m[K);
+      |                                                            [01;31m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/algorithm:73[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:11[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21[m[K:
+[01m[K/usr/include/c++/13/pstl/glue_algorithm_defs.h:101:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::count[m[K’ declared here
+  101 | [01;36m[Kcount[m[K(_ExecutionPolicy&& __exec, _ForwardIterator __first, _ForwardIterator __last, const _Tp& __value);
+      | [01;36m[K^~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:36:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+   36 |                 [01;31m[Kreturn[m[K;
+      |                 [01;31m[K^~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:42:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<turtlesim::srv::Spawn, __gnu_cxx::_S_atomic, false, false>::element_type = struct turtlesim::srv::Spawn[m[K’ {aka ‘[01m[Kstruct turtlesim::srv::Spawn[m[K’} has no member named ‘[01m[Kx[m[K’
+   42 |         request->[01;31m[Kx[m[K = GetRandomCoordinate();
+      |                  [01;31m[K^[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:43:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<turtlesim::srv::Spawn, __gnu_cxx::_S_atomic, false, false>::element_type = struct turtlesim::srv::Spawn[m[K’ {aka ‘[01m[Kstruct turtlesim::srv::Spawn[m[K’} has no member named ‘[01m[Ky[m[K’
+   43 |         request->[01;31m[Ky[m[K = GetRandomCoordinate();
+      |                  [01;31m[K^[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:45:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient_[m[K’ was not declared in this scope
+   45 |          auto future_result = [01;31m[Kclient_[m[K->async_send_request(request);
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:50:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ was not declared in this scope
+   50 |             [01;31m[Kstring[m[K turtle = future_result.get()->name.c_str();
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:50:13:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/13/iosfwd:41[m[K,
+                 from [01m[K/usr/include/c++/13/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/13/memory:80[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K:
+[01m[K/usr/include/c++/13/bits/stringfwd.h:77:33:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’
+   77 |   typedef basic_string<char>    [01;36m[Kstring[m[K;
+      |                                 [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:18[m[K:
+[01m[K/usr/include/c++/13/string:66:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::string[m[K’
+   66 |     using [01;36m[Kstring[m[K    = basic_string<char>;
+      |           [01;36m[K^~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:51:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle[m[K’ was not declared in this scope; did you mean ‘[01m[Kturtlesim[m[K’?
+   51 |             RCLCPP_INFO(this->get_logger(), "Spawned turtle named: %s", [01;31m[Kturtle[m[K);
+      |                                                                         [01;31m[K^~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:52:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtle[m[K’ was not declared in this scope; did you mean ‘[01m[Kturtlesim[m[K’?
+   52 |             turtleQueue.push([01;31m[Kturtle[m[K);
+      |                              [01;31m[K^~~~~~[m[K
+      |                              [32m[Kturtlesim[m[K
+gmake[2]: *** [CMakeFiles/turtlespawn_node.dir/build.make:76: CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlespawn_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

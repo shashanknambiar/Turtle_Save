@@ -1,0 +1,32 @@
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:[m[K In constructor ‘[01m[KTurtleSpawnNode::[01;32m[KTurtleSpawnNode[m[K()[m[K’:
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtargetServer[m[K’ was not declared in this scope
+   16 |         [01;31m[KtargetServer[m[K = this->create_service<>("");
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:16:46:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtleSpawnNode::create_service<>(const char [1])[m[K’
+   16 |         targetServer = [01;31m[Kthis->create_service<>("")[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:302:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::[01;32m[Kcreate_service[m[K(const std::string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  302 |   [01;36m[Kcreate_service[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:302:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:318:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::[01;32m[Kcreate_service[m[K(const std::string&, CallbackT&&, const rclcpp::QoS&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  318 |   [01;36m[Kcreate_service[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:318:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtaskCompleteServer[m[K’ was not declared in this scope
+   17 |         [01;31m[KtaskCompleteServer[m[K = this->create_serivce<>("");
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:17:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass TurtleSpawnNode[m[K’ has no member named ‘[01m[Kcreate_serivce[m[K’; did you mean ‘[01m[Kcreate_service[m[K’?
+   17 |         taskCompleteServer = this->[01;31m[Kcreate_serivce[m[K<>("");
+      |                                    [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                    [32m[Kcreate_service[m[K
+[01m[K/home/ros/ros2_ws/src/turtle_save_pkg/src/turtlespawnnode.cpp:17:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   17 |         taskCompleteServer = this->create_serivce<[01;31m[K>[m[K("");
+      |                                                   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/turtlespawn_node.dir/build.make:76: CMakeFiles/turtlespawn_node.dir/src/turtlespawnnode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlespawn_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
