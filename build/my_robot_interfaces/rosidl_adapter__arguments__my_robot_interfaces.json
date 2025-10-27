@@ -1,6 +1,0 @@
-{
-  "package_name": "my_robot_interfaces",
-  "non_idl_tuples": [
-    "/home/ros/ros2_ws/src/my_robot_interfaces:msg/HardwareStatus.msg"
-  ]
-}
